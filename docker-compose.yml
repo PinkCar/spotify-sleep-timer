@@ -1,0 +1,12 @@
+services:
+  flask-be:
+    build:
+      ./flask-be
+    ports: 
+      - "5001:5001"
+
+  react-app:
+    build:
+      ./spotify-sleep-timer
+    ports:
+      - "3000:3000"  
